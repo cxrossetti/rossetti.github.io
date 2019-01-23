@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<!------------------------------------------------------------------------------------------------->
+<html>
+<title>Claudio Rossetti</title>
+<meta name="keywords" content="claudio, rossetti, econometrics, statistics, data science, analytics, luiss, unina">
+<meta name="description" content="Claudio Rossetti personal page">
+<meta name="author" content="Claudio Rossetti">
+<meta http-equiv="refresh" content="300">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!------------------------------------------------------------------------------------------------->
+<!-- <link rel="stylesheet" href="http://claudiorossetti.co.nf/css/mystyle.css"> -->
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/academicons.css">
+<!-- <link rel="stylesheet" href="academicons.min.css"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<!------------------------------------------------------------------------------------------------->
+<style>
+/* .bkglight{background:#3d3d3d url('images/DigitalStream.png')} */
+/* .bkgdark{background:#3d3d3d url('images/DigitalStream2.png')} */
+/* Header image */
+.bgimg-hd{background-image:url('images/headerbkg.jpg');min-height:100%;}
+/* Papers image */
+.bgimg-pa{background-image:url('images/researchbkg.jpg');min-height:300px;}
+/* Teaching image */
+.bgimg-te{background-image:url('images/teachingbkg.jpg');min-height:300px;}
+/* Links image */
+.bgimg-li{background-image:url('images/linksbkg.jpg');min-height:300px;}
+/* Codes image */
+/* .bgimg-cc{background-image:url('images/codesbkg.jpg');min-height:300px;} */
+/* Contacts image */
+.bgimg-co{background-image:url('images/contactsbkg.jpg');min-height:300px;}
+</style>
+<!------------------------------------------------------------------------------------------------->
+<body>
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Navbar (sit on top) -->
+<!------------------------------------------------------------------------------------------------->
+<div class="top text-navbar size-topbar">
+	<!---------------------------------------------->
+	<div class="bar size-topbar" id="myNavbar">
+		<!---------------------------------------------->
+		<!-- Navbar on small and medium screens -->
+		<a href="#home" class="bar-item center button hide-largetopb left">CLAUDIO ROSSETTI</a>
+	<!--     <i class="fa fa-home"></i> -->
+		<a class="bar-item center button hide-largetopb right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+			<i class="fa fa-bars"></i>
+		</a>
+		<!---------------------------------------------->
+		<!-- Navbar on large screens -->
+		<a href="#papers" class="bar-item center button hide-medsmalltopb col s2"><i class="fa fa-book"></i> PAPERS</a>
+		<a href="#teaching" class="bar-item center button hide-medsmalltopb col s2"><i class="fa fa-graduation-cap"></i> TEACHING</a>
+		<a href="#home" class="bar-item center button hide-medsmalltopb col s4">CLAUDIO ROSSETTI</a>
+	<!--     "http://claudiorossetti.co.nf" target="_top"  -->
+		<!--     <a href="#codes" class="bar-item button hide-medsmalltopb"><i class="fa fa-file-code-o"></i> CODES</a> -->
+	<!-- 		fa-file-code-o; fa-terminal; fa fa-laptop;  -->
+		<a href="#links" class="bar-item center button hide-medsmalltopb col s2"><i class="fa fa-link"></i> LINKS</a>
+		<a href="#contacts" class="bar-item center button hide-medsmalltopb col s2"><i class="fa fa-envelope"></i> CONTACTS</a>
+	<!--     <a href="#" class="bar-item button hide-medsmalltopb right hover-red"><i class="fa fa-search"></i></a> -->
+		<!---------------------------------------------->
+	</div>
+	<!---------------------------------------------->
+	<!-- Navbar on small and medium screens -->
+	<div id="navDemo" class="bar-block colors-hiddennavbar size-topbar hide hide-largetopb">
+		<a href="#papers" class="bar-item button" onclick="toggleFunction()">PAPERS</a>
+		<a href="#teaching" class="bar-item button" onclick="toggleFunction()">TEACHING</a>
+		<a href="#links" class="bar-item button" onclick="toggleFunction()">LINKS</a>
+		<a href="#contacts" class="bar-item button" onclick="toggleFunction()">CONTACTS</a>
+	<!-- 	<a href="#" class="bar-item button">SEARCH</a> -->
+	</div>
+	<!---------------------------------------------->
+</div>
+<!------------------------------------------------------------------------------------------------->
+<!-- Icon Bar (Sidebar - hidden on small and medium screens) -->
+<!------------------------------------------------------------------------------------------------->
+<!-- <nav class="sidebar bar-block small hide-medsmallsideb center padding-sidebar"> -->
+<!-- 	<img src="images/me.jpg" style="width:100%"> -->
+<!-- 	<div class="nameshad center sbcontacts"> -->
+<!-- 		<a href="mailto: claudio.rossetti@unina.it" target="_blank"><i class="fa fa-envelope-o"></i></a> -->
+<!-- 		<a href="http://scholar.google.it/citations?hl=en&user=CXgSYAcAAAAJ" target="_blank"><i class="ai ai-google-scholar ai-1x"></i></a> -->
+<!-- 		<a href="https://drive.google.com/open?id=0BzOSra1idA2wMVNOY0FsRXVGYXc" target="_blank"><i class="fa fa-file-pdf-o"></i>CV</a> -->
+<!-- 	</div> -->
+<!-- 	<a href="#home" class="bar-item center button"><i class="fa fa-home"></i></a> -->
+<!-- 	<a href="#papers" class="bar-item center button padding-large"><i class="fa fa-book"></i></a> -->
+<!-- 	<a href="#teaching" class="bar-item center button"><i class="fa fa-graduation-cap"></i></a> -->
+<!-- 	<a href="#codes" class="bar-item button"><i class="fa fa-file-code-o"></i></a> -->
+<!-- 	<a href="#links" class="bar-item center button"><i class="fa fa-link"></i></a> -->
+<!-- 	<a href="#contacts" class="bar-item center button"><i class="fa fa-envelope"></i></a> -->
+<!-- </nav> -->
+<!------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Parallax Image with Logo Text -->
+<div class="bgimg-hd display-container" id="home">
+	<div class="display-middle">
+	<!---------------------------------------------->
+		<div class="center">
+<!--	 		<img class="animate-zoom center" src="images/misc/headername2.png" width="100%" align="center"/> -->
+			<span class="animate-zoom nameshad center hide-small hide-medium nowrap hdtextlarge">Claudio Rossetti</span>
+			<span class="animate-zoom nameshad center hide-small hide-large nowrap hdtextmedium">Claudio Rossetti</span>
+			<span class="animate-zoom nameshad center hide-medium hide-large nowrap hdtextsmall">Claudio Rossetti</span>
+<!-- 			<span class="animate-right nameshad center hdcontacts">
+				<a href="mailto: claudio.rossetti@unina.it" target="_blank"><i class="fa fa-envelope-o"></i></a>
+				<a href="http://scholar.google.it/citations?hl=en&user=CXgSYAcAAAAJ" target="_blank"><i class="ai ai-google-scholar ai-1x"></i></a>
+				<a href="https://drive.google.com/open?id=0BzOSra1idA2wMVNOY0FsRXVGYXc" target="_blank"><i class="fa fa-file-pdf-o"></i>CV</a>
+			</span>
+-->
+		</div>
+		<!---------------------------------------------->
+		<!-- About Me Container -->
+		<!---------------------------------------------->
+		<div class="animate-zoom medlarge justify aboutme contentmaxwidht" id="about">
+			<!-- <strong><em>Assistant Professor of Statistics and Econometrics</em></strong> at <a href="http://www.luiss.edu/" target="_blank">Luiss Guido Carli.</a><br><br> -->
+<!-- 			<p><strong>Assistant Professor of Econometrics</strong> at the  -->
+			<p><strong>Professor of Statistics and Econometrics</strong> at the University of Naples Federico II.
+			<!-- <a href="http://www.dises.unina.it/en_GB/home" target="_blank">Dept. of Economics and Statistics</a>,  -->
+<!-- 			<a href="http://www.unina.it/en_GB/home" target="_blank">University of Naples Federico II.</a> -->
+			</p>
+			<p>
+				<strong>PhD</strong> in Econometrics and Empirical Economics<span class="hide-small hide-medium hide-large"> from Tor Vergata University</span>.<br>
+<!-- 				<a href="http://www.economia.uniroma2.it/" target="_blank">Tor Vergata University.</a><br> -->
+				<strong>International PhD Program</strong> in Health Economics and Policy<span class="hide-small hide-medium hide-large"> from the University of Lausanne</span>.<br>
+				<strong>Master (MSc)</strong> in Economics<span class="hide-small hide-medium hide-large"> from Tor Vergata University</span>.
+			</p>
+			
+			<p>
+				Prominent research and working experience in <strong>quantitative analysis</strong> 
+				<span class="hide-small hide-medium"> (data collection, analysis and reporting, especially with large datasets) </span>
+				and <strong>computer programming</strong>.
+				Strong professional experience in <strong>consulting</strong>.
+<!-- 				Excellent English writing and oral presentation skills, also to business/non-technical audiences. -->
+<!-- 				Strong team-work spirit with experience of working in highly international environments. -->
+			</p>
+
+			<span class="hide-small hide-medium"><p><strong>Main research interests</strong>: Microeconometric theory and applications, Health Economics and Economics of Education, causal modelling for business decisions and government policy.</p></span>
+		</div>
+	<!---------------------------------------------->
+	</div>
+	<div class="center mybottom contentmaxwidht"><a href="#papers"><i class="xxxlarge padding-32 fa fa-arrow-circle-o-down"></i></a></div>
+</div>
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->
+<!-- Some useful icons: fa-bar-chart fa-binoculars fa-bolt fa-bookmark fa-database fa-file-code-o -->
+<!-- fa fa-area-chart fa fa-bar-chart fa fa-line-chart fa fa-pie-chart -->
+<!------------------------------------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Papers Container -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Parallax Image -->
+<div class="bgimg-pa display-container" id="papers">
+	<div class="display-middle">
+		<span class="animate-zoom nameshad center sectiontitle">PAPERS</span>
+<!-- 		<span class="xxlarge mytagshad wide"><i class="faicontleft fa fa-book"></i>PAPERS<i class="faicontright fa fa-book"></i></span> -->
+	</div>
+</div>
+<!---------------------------------------------->
+<div class="container large justify maintext containerminheigh">
+	<div class="content padding-t24b48 contentmaxwidht">
+		<div class="myborder">
+		<!---------------------------------------------------------------------------------------------->
+		<button onclick="myAccFunc('AccArticles')" class="accortoptag padding-16 colors-sections button buttonc block left-align">ARTICLES IN REFEREED JOURNALS</button>
+		<div id="AccArticles" class="show animate-opacity">
+			<div class="container maintext">
+			<p>
+			<OL TYPE="1">
+				<li><a href="https://www.rivisteweb.it/doi/10.1429/86376" target="_blank">"Teacher motivation and student learning"</a>, with Gianna Barbieri and Paolo Sestito, <span style="font-style: italic;">Journal of Economic Policy</span>, 33:1 (2017), 59-72.</li>
+				<li><a href="http://www.izajolp.com/content/3/1/23" target="_blank">"In-Work Benefits for Married Couples: An Ex-Ante Evaluation of EITC and WTC Policies in Italy"</a>, with Giuseppe De Luca and Daniela Vuri, <span style="font-style: italic;">IZA Journal of Labor Policy</span>, 3:23 (2014).</li>
+				<li><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1467-985X.2012.01066.x/full" target="_blank">"The heterogeneous thresholds ordered response model: Identification and inference"</a>, with Franco Peracchi, <span style="font-style:italic;">Journal of the Royal Statistical Society: Series A (Statistics in Society)</span>, 176:2 (2013), 1-20.</li>
+				<li><a href="http://dx.medra.org/10.1007/s00181-011-0530-8" target="_blank">"Heterogeneity in health responses and anchoring vignettes"</a>, with Franco Peracchi, <span style="font-style:italic;">Empirical Economics</span>, 42:2 (2012), 513-538.</li>
+				<li><a href="http://dx.doi.org/10.1016/j.econedurev.2011.07.010" target="_blank">"The determinants of teacher mobility: Evidence using Italian teachers' transfer applications"</a>, with Gianna Barbieri and Paolo Sestito, <span style="font-style:italic;">Economics of Education Review</span>, 30:6 (2011), 1430-1444.</li>
+				<li><a href="url:http://onlinelibrary.wiley.com/doi/10.1002/hec.1135/pdf" target="_blank">"Drug compliance, co-payment and health outcomes: Evidence from a panel of Italian patients"</a>, with Vincenzo Atella, Franco Peracchi, and Domenico De Palo, <span style="font-style:italic;">Health Economics</span>, 15:9 (2006), 875-892.</li>
+			</OL>
+			<blockquote><a style="text-decoration:underline" href="https://drive.google.com/open?id=0BzOSra1idA2wd1Jzem1rX3J0MXc" target="_blank">Download BibTeX references</a></blockquote>
+	<!-- 		<blockquote><a style="text-decoration:underline" href="https://drive.google.com/open?id=0BzOSra1idA2wTVVjakZob3FMeE0" target="_blank">Download BibTeX references</a></blockquote> -->
+			</p>
+			</div>
+		</div>
+		<!---------------------------------------------->
+		<button onclick="myAccFunc('AccMorePapers')" class="accorbottomtag padding-16 colors-sections button buttonc block left-align">MORE PAPERS<i class="margin-left fa fa-plus-square"></i></button>
+		<div id="AccMorePapers" class="hide animate-opacity">
+			<div class="container maintext accorbottomtag">
+			<h4>BOOK CHAPTERS</h4>
+			<p>
+			<OL TYPE="1">
+				<li>"Mobilit&agrave; geografica e professionale dei docenti italiani", with Gianna Barbieri and Piero Esposito, in G. De Simone et al. (eds.), <span style="font-style: italic;">Rapporto sulla scuola in Italia 2009</span>, Editori Laterza, Rome, 2009.</li>
+				<li>"Sampling design and weighting strategies in the second wave of SHARE", with Giuseppe De Luca, in Axel B&ouml;rsch-Supan 	et al. (eds.), <a href="http://www.share-project.org/uploads/tx_sharepublications/BuchSHAREganz250808.pdf" target="_blank"><span style="font-style: italic;">First Results from the Survey of Health, Ageing and Retirement in Europe (2004-2007) &mdash; Starting the Longitudinal Dimension</span></a>, 333-338, MEA, Mannheim, 2008.</li>
+			</OL>
+	<!-- 		<blockquote><a style="text-decoration:underline" href="https://drive.google.com/open?id=0BzOSra1idA2waTZVdjVJaHlnV3c" target="_blank">Download BibTeX references</a></blockquote> -->
+			</p>
+			<!---------------------------------------------->
+			<h4>CONFERENCE PROCEEDINGS</h4>
+			<p>
+			<OL TYPE="1">
+				<li>"Il secondo programma di auto-valutazione dei CLM 2007-2008. Il progetto, il questionario e le prime riflessioni", with Andrea Lenzi, Sabrina Luccarini, and Roberto Dandi, in Luigi Frati et al. (eds.), <span style="font-style: italic;">Quaderni delle Conferenze Permanenti delle Facolt&agrave; di Medicina e Chirurgia</span>, UNIVPM, Ancona, 40-41 (2007), 1732-1736. </li>
+				<li>"Health and Income Inequalities in Europe: evidence from microlevel longitudinal data", <span style="font-style: italic;">Applied Health Economics and Health Policy</span>, Vol. 3, Number I (Supplement), 2004. </li>
+			</OL>
+			</p>
+			<!---------------------------------------------->
+			<h4>DISCUSSION PAPERS</h4>
+			<p>
+			<OL TYPE="1">
+				<li><a href="http://www.invalsi.it/download/wp/wp18.pdf" target="_blank">"Teacher Mobility and Student Learning"</a>, with Gianna Barbieri and Paolo Sestito, <span style="font-style: italic;">INVALSI Working Paper</span>, No.18/2013, January 2013.</li>
+				<li><a href="http://ftp.iza.org/dp6739.pdf" target="_blank">"In-Work Benefits for Married Couples: An Ex-Ante Evaluation of EITC and WTC Policies in Italy"</a>, with Giuseppe De Luca and Daniela Vuri, <span style="font-style: italic;">IZA Discussion Paper</span>, No. 6739, July 2012.</li>
+				<li><a href="http://www.bancaditalia.it/pubblicazioni/econo/temidi/td10/td761_10/en_td_761_10/en_tema_761.pdf" target="_blank">"The determinants of teacher mobility. Evidence from a panel of Italian teachers"</a>, with Gianna Barbieri and Paolo Sestito, <span style="font-style: italic;">Temi di Discussione</span>, No. 761, Bank of Italy, June 2010.</li>
+				<li><a href="http://www.academia.edu/809769/Gender_and_regional_differences_in_self-rated_health_in_Europe" target="_blank">"Gender and regional differences in self-rated health in Europe"</a>, with Franco Peracchi, <span style="font-style: italic;">CEIS Research Papers</span>, Vol. 7, Issue 2, No. 142, February 2009.</li>
+			</OL>
+	<!-- 		<blockquote><a style="text-decoration:underline" href="https://drive.google.com/file/d/0BzOSra1idA2wbVJuZXVGRGJXWWs" target="_blank" >Download BibTeX references</a></blockquote> -->
+			</p>
+			<!---------------------------------------------->
+			<h4>WORKING PAPERS</h4>
+			<p>
+			<OL TYPE="1">
+				<li>"Actual and Desired Teacher Mobility and Student Achievement", with Paolo Sestito, June 2017.</li>
+				<li>"A dynamic factor model of health and medical treatment", with Franco Peracchi, September 2018.</li>
+				<li>"Unobserved heterogeneity in structural behavioral models using experimental data", with Giovanni Ponti, September 2018.</li>
+				<li>"Quality Assurance in Higher Education. Promoting self-evaluation of Italian Medical Schools",October 2008.</li>
+				<li>"Ordered probit models with anchoring vignettes", July 2008.</li>
+				<li>"Medical drug consumption and compliance to prescribed regimen", July 2008.</li>
+			</OL>
+			</p>
+			<!---------------------------------------------->
+			</div>
+		</div>
+		<!---------------------------------------------->
+		</div>
+	</div>
+</div>
+<!------------------------------------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Teaching Container -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Parallax Image -->
+<div class="bgimg-te display-container" id="teaching">
+	<div class="display-middle">
+		<span class="animate-zoom nameshad center sectiontitle">TEACHING</span>
+	</div>
+</div>
+<!---------------------------------------------->
+<div class="container large justify maintext containerminheigh">
+	<div class="content padding-24 contentmaxwidht">
+	<!---------------------------------------------------------------------------------------------->
+	<div class="myborder containerminheigh">
+		<div class="mybar colors-sections">
+			<button class="bar-item button buttonc testbtn padding-16" onclick="openTabs(event,'unina')">University of Naples Federico II</button>
+			<button class="bar-item button buttonc testbtn padding-16" onclick="openTabs(event,'luiss')">LUISS Guido Carli</button>
+		</div>
+		<!---------------------------------------------------------------------------------------------->
+		<div id="unina" class="container tabelement animate-opacity maintext accorbottomtag">
+			<h2 class="center">University of Naples Federico II</h2>
+	<!-- 		<h3>Undergraduate Degree in Economics</h3> -->
+			<!------------------------------------------------------------------------------------------->
+			<button onclick="myAccFunc('I2E')" class="padding-16 colors-sections button buttonc block left-align accortag">Introduction to Econometrics 2017/18<i class="right fa fa-plus-square"></i></button>
+			<div id="I2E" class="hide animate-opacity">
+				<div class="container maintext padding-b42">
+				<!--------------------------------------------------------->
+				<!-- Scrolling news -->
+<!-- 				<marquee behavior="scroll" direction="left" scrollamount="3"> -->
+<!-- 				<a class="text-dkgreen">&diams;</a> -->
+<!-- 				News: <a class="text-dkgreen">&diams;</a> -->
+<!-- 				<p class="text-dkgreen center">News</p> -->
+	<!-- 			Problem sets are now on-line. Check the solutions next week... -->
+				<!-- On-line nella sezione Prove scritte le regole per la verifica dell'apprendimento (2015/16) -->
+				<!-- On-line nella sezione Prove scritte i voti finali (dati dalla media del voto ottenuto nelle due parti del corso) che possono essere verbalizzati al primo appello utile, previa prenotazione -->
+				<!--	La seconda prova scritta &egrave stata posticipata al <strong>14/02/2014 ore 10:30</strong> -->
+				<!-- 	On-line i risultati dell'esame del 03/09/2014 -->
+				<!-- 	On-line i risultati della seconda prova scritta -->
+				<!-- 	<a style="color:#1C6F1C;">&diams;</a> -->
+				<!-- 	On-line le soluzioni e i risultati della prima prova scritta -->
+				<!-- 	<a style="color:#1C6F1C;">&diams;</a>  -->
+				<!-- 	On-line i risultati del primo Problem set -->
+				<!-- 	<a style="color:#1C6F1C;">&diams;</a>  -->
+				<!-- 	Data della prima prova scritta intermedia del primo semestre: <strong>14/01/2015 ore 10:30</strong> -->
+				<!-- 	On-line i <strong>risultati</strong> della seconda prova scritta intermedia -->
+				<!-- 	Date delle prove scritte intermedie del primo semestre: <strong>18/12/2013 ore 10:00</strong> e <strong>13/02/2014 ore 10:30</strong> -->
+				<!-- 	Il giorno 21/11 si svolger&agrave lezione, mentre il giorno 26/11 si svolger&agrave esercitazione -->
+<!-- 				<a class="text-dkgreen">&diams;</a> -->
+<!-- 				</marquee> -->
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Info</h2>
+				<h2>Learning goals</h2>
+				<p>
+				Introduction to empirical research in economics. 
+				Specifically, the aim of the course is to let students learn how to conduct independently, 
+				and how to evaluate critically, empirical studies in economics. 
+				At the end of the course students will know how to use the main regression methods in empirical research
+				to analyze economic and financial phenomena using data. 
+				Students will also learn how to use the statistical and econometric software STATA.
+				</p>
+				<!--<h2>Teaching Method</h2>
+				<ul>
+				<li>Lectures and Practice Sections</li>
+				<li>Practical applications and demonstration of the use of statistical and econometric software</li>
+				</ul>-->
+				<h2>Assessment Method</h2>
+				<p>
+				The purpose of the assessment is to verify the aptitude for reasoning and the ability to apply 
+				acquired skills to real problems, through the realization and discussion of a team project 
+				work on one empirical application in economics and finance, as well as the 
+				resolution, interpretation and the commentary on the exercises proposed for the exam.
+				</p>
+				<ul>
+				<li>Project work, 30% of final grade</li>
+				<li>Written exam, 70% of final grade</li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Course Contents</h2>
+				<ul>
+					<li>Introduction</li>
+					<li>Review of probability and statistics</li>
+					<li>Linear regression model with one regressor</li>
+<!-- 					<li>Linear regression model with one regressor: hypothesis testing and confidence intervals</li> -->
+					<li>Linear regression model with one regressor: estimation and inference</li>
+					<li>Linear regression model with multiple regressors</li>
+<!-- 					<li>Linear regression model with multiple regressors: hypothesis testing and confidence intervals</li> -->
+					<li>Linear regression model with multiple regressors: estimation and inference</li>
+				<!-- 	<li>Basic regression with time series data</li> -->
+				<!-- 	<li>Basic regression with panel data</li> -->
+					<li>Basic regression with binary response variables</li>
+					<li>Regression with instrumental variables</li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Course materials</h2>
+				<h2>Reference Books</h2>
+				<ul>
+					<li>Wooldridge J.M, <em>Introductory Econometrics. A Modern Approach.</em> 5th Edition, Cengage Learning, 2013.</li> 
+					<li>Stock J.H. and M.W. Watson, <em>Introduction to Econometrics.</em> 3rd Edition, Pearson Series in Economics.</li> 
+					<li>Further readings about empirical applications in economics will be assigned during classes.</li>
+				</ul>
+				<h2>Software</h2>
+				<a href="http://www.stata.com/">Stata</a></em>. Suggested readings: 
+				<ul>
+					<li>Hamilton L.C., <em>Statistics with Stata</em> (Updated for Version 10), Brooks/Cole, 2009.</li>
+					<li>A. C. Acock. <em>A Gentle Introduction to Stata</em>. Fourth Edition, Stata Press, 2014.</li> 
+				</ul>
+<!-- 				Lecture notes, tutorial and practice lessons, datasets and summary exercises are available for download at the teacher's web site. -->
+				<p><a href="https://drive.google.com/open?id=1P2wh13gjU_njFpS8wInKSly_vT_K5R-_" target="_blank" ><i class="fa fa-download"></i>&nbsp Download course materials</a></p>
+	<!-- <h2>Home assignment</h2> -->
+	<!-- <ul> -->
+	<!-- 	<li>WORKING GROUPS: <a href="https://goo.gl/forms/cVgNen0EZQhQIf2m2" target="_blank" >Please provide name and surname of group members by 22/03/2017 using the link to this form.</a></li> -->
+	<!-- 	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNVWAUHYJPdrJjOGBP1p81dhkwdqT_z5QPNzfVbnqnQkNh2A/viewform?embedded=true" width="570" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+	<!-- </ul> -->
+				<!--------------------------------------------------------->
+<!-- 				<h2 class="colors-sectionst h2bar">Exams</h2> -->
+<!-- 				<ul> -->
+<!-- 					<li>13/06/2017 - ore 12:00, aula D10</li> -->
+<!-- 					<li>04/07/2017 - ore 12:00, aula D10</li> -->
+<!-- 					<li>12/09/2017 - ore 12:00, aula D10</li> -->
+<!-- 				</ul> -->
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Contacts</h2>
+				<ul>
+					<li>Prof. Claudio Rossetti (<a href="mailto:claudio.rossetti@unina.it" target="_blank">claudio.rossetti@unina.it</a>)</li>
+				</ul>
+				<!--<h2>Office hours</h2>
+				<p>Office hours by email appointment</p>-->
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Links</h2>
+				<ul>
+					<li>
+						<a href="http://www.stata.com/links/video-tutorials/" target="_blank" >Stata video tutorials</a>
+					</li>
+				</ul>
+				<!--------------------------------------------------------->
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------------------->
+		</div>
+		<!---------------------------------------------------------------------------------------------->
+		<div id="luiss" class="container tabelement animate-opacity maintext accorbottomtag">
+			<h2 class="center">LUISS Guido Carli</h2>
+			<!------------------------------------------------------------------------------------------->
+			<!------------------------------------------------------------------------------------------->
+<!-- 			<button onclick="myAccFunc('Demo4')" class="padding-16 colors-sections button buttonc block left-align accortag">Econometria per la Finanza 2017/18<i class="right fa fa-plus-square"></i></button> -->
+<!-- 				<p><a href="https://drive.google.com/open?id=19aE7xhMlAkNIdL-0opE4crl9SVAL5x0m" target="_blank" ><i class="fa fa-download"></i>&nbsp Download course materials</a></p> -->
+			<!------------------------------------------------------------------------------------------->
+			<!------------------------------------------------------------------------------------------->
+			<button onclick="myAccFunc('Demo4')" class="padding-16 colors-sections button buttonc block left-align accortag">Web Analytics and Marketing 2016/17<i class="right fa fa-plus-square"></i></button>
+			<div id="Demo4" class="hide animate-opacity">
+				<div class="container maintext padding-b42">
+				<!--------------------------------------------------------->
+<!-- 				<p class="text-dkgreen center">News</p> -->
+	<!-- 			La lezione del 4 maggio 2017 &egrave; sospesa su indicazione del Rettore in occasione del LUISS Career Day-I Giovani e il Lavoro -->
+				<!-- On-line i risultati dell'home assignment di Web Analytics -->
+				<!-- On-line l'home assignment da svolgere in gruppi definiti a inizio corso e da riconsegnare via mail entro e non oltre il 10/05/2016 -->
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Info</h2>
+				<h2>Obiettivi formativi</h2>
+				<p>
+				Il corso di Web Analytics e Marketing affronta con metodo rigoroso le tematiche inerenti il fare 
+				marketing nel contesto digitale e sociale nel quale individui, imprese e organizzazioni sono 
+				inevitabilmente immersi. Il corso ha l'obiettivo di fornire agli studenti le conoscenze essenziali 
+				sui modelli, processi, strumenti e tecniche che accompagnano le analisi, le decisioni e la gestione 
+				operativa del marketing nel mondo di Internet e dei social media. Oltre a fornire tali strumenti 
+				concettuali, il corso si propone di fornire agli studenti gli strumenti quantitativi fondamentali 
+				per l'analisi e misurazione delle azioni di web e social media marketing, tramite approfondimenti 
+				statistici sulle metriche maggiormente utilizzate per identificare le azioni di web e social media 
+				marketing che possono considerarsi di successo.
+				</p>
+				<h2>Prerequisiti</h2>
+				<p>
+				Non &egrave; obbligatoria alcuna conoscenza preliminare specifica.
+				La familiarit&agrave; con i concetti di base del marketing, dell'economia e della statistica &egrave; consigliata.
+				</p>
+				<h2>Verifica dell'apprendimento</h2>
+				<ul>
+					<li>Esercitazioni di Web analytics (gruppi): 40%
+					<li>Project work (gruppi): 20%
+					<li>Esame scritto finale (individuale): 40%
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Materiale didattico</h2>
+				<h2 class="padding-8">Web Analytics: Class notes and Practice</h2>
+				<p><a href="https://drive.google.com/open?id=0BzOSra1idA2wNjkxRkVtYVVieWs" target="_blank" ><i class="fa fa-download"></i>&nbsp Download materiale didattico</a></p>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Contatti</h2>
+				<ul>
+					<li>Prof. Claudio Rossetti (<a href="mailto:crossetti@luiss.it" target="_blank">crossetti@luiss.it</a>)</li>
+					<li>Collaboratore: Dr. Antonio Pacifico (<a href="mailto:apacifico@luiss.it">apacifico@luiss.it</a>)</li>
+				</ul>
+				<h2>Ricevimento studenti</h2>
+				<p>Si prega di richiedere un appuntamento tramite email al docente o ai collaboratori del corso.</p>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Links</h2>
+				<ul>
+					<li>
+						<a href="http://www.stata.com/links/video-tutorials/" target="_blank" >Stata video tutorials</a>
+					</li>
+				</ul>
+				<!--------------------------------------------------------->
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------------------->
+	<!-- 		<h3>Undergraduate Degree in Economics and Management</h3> -->
+			<!------------------------------------------------------------------------------------------->
+			<button onclick="myAccFunc('Demo5')" class="padding-16 colors-sections button buttonc block left-align accortag">Statistica 2016/17<i class="right fa fa-plus-square"></i></button>
+			<div id="Demo5" class="hide animate-opacity">
+				<div class="container maintext padding-b42">
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Info</h2>
+				<h2>Obiettivi formativi</h2>
+				<p>
+				L'obiettivo del corso &egrave; dotare gli studenti dei metodi statistici di base per
+				la raccolta e l'analisi di dati univariati e bivariati.
+				Lo studio della Statistica descrittiva fornisce gli strumenti per un'analisi
+				esplorativa dei dati.
+				Lo studio della Teoria della Probabilit&agrave; fornisce i modelli dei fenomeni
+				soggetti a condizioni di incertezza.
+				Lo studio dell'Inferenza statistica fornisce strumenti di analisi di dati
+				relativi a fenomeni soggetti a condizioni di incertezza.
+				</p>
+				<h2>Verifica dell'apprendimento</h2>
+				<p>
+				L'esame consiste in una prova scritta, costituita da domande a risposta multipla e da quesiti di 
+				natura sia teorica che pratica; di norma con 3 ore di tempo a disposizione durante la quale non &egrave 
+				consentita la consultazione di libri o appunti.
+				</p>
+				<p>
+				E' prevista durante il corso l'assegnazione di 2 problemi inerenti gli argomenti trattati applicati 
+				a dati reali (da risolvere in gruppi di al massimo tre studenti) e da riconsegnare al docente, con 
+				svolgimento mediante EXCEL. Ciascun problema risolto prevede l'assegnazione di un punteggio da 0 a 1.
+				Il voto finale &egrave ottenuto sommando all'esito della prova scritta la somma dei voti nelle 2 prove 
+				(0, 1, 2 punti), limitatamente alla prima prova sostenuta - con qualsiasi esito - in uno degli appelli 
+				della prima sessione.
+				</p>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Outline del corso</h2>
+				<h2>Lezioni</h2>
+				Caratteri statistici e distribuzioni di frequenza. Rappresentazioni grafiche. Indici di
+				posizione. Indici di variabilit&agrave.
+				Esperimento casuale ed eventi. Impostazione assiomatica e teoremi della
+				probabilit&agrave. Probabilit&agrave condizionata. Eventi indipendenti.
+				Variabili casuali univariate e bivariate discrete e continue. Modelli per variabili
+				casuali. Il teorema del limite centrale.
+				Introduzione al campionamento. Stima puntuale. Stima per intervallo. Test delle
+				ipotesi. Correlazione e modello di regressione lineare semplice.
+				<h2>Esercitazioni</h2>
+				Gli studenti vengono sollecitati ad applicare le nozioni teoriche al fine di risolvere
+				problemi empirici di natura economica e aziendale anche utilizzando programmi di
+				calcolo statistico.
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Materiale didattico</h2>
+				<h2>Testi di riferimento</h2>
+				<p>A.C. MONTI (2008), <em>Introduzione alla Statistica</em>, ESI.<p/>
+				<p><a href="https://www.dropbox.com/sh/dtrtxisi0mi53p3/AAAOzoUJ10cNPJ5JI0yMTZOza?dl=0" target="_blank" ><i class="fa fa-download"></i>&nbsp Download Materiale Didattico</a></p>
+				<h2>Problem sets</h2>
+				<ul>
+					<li>GRUPPI DI LAVORO: <a href="https://goo.gl/forms/87MzGkqNFMO4dQsk2" target="_blank" >Inserire matricola, nome e cognome dei componenti del gruppo (max 3 componenti) entro il 30/09/2016 utilizzando il link a questo form.</a></li>
+				<!-- 	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNVWAUHYJPdrJjOGBP1p81dhkwdqT_z5QPNzfVbnqnQkNh2A/viewform?embedded=true" width="570" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+					<li><a href="https://www.dropbox.com/sh/e2q3ieyatut9o6z/AAA5ljNE66ppLwzMCDuUzl4_a?dl=0" target="_blank" >Download Problem Set per il primo bonus (leggere il file Istruzioni.pdf)</a></li>
+					<li><a href="https://www.dropbox.com/sh/zcg3i3zxx4f57ks/AADi3QGp4EUuMs6uuXMuQw6Ca?dl=0" target="_blank" >Download Problem Set per il secondo bonus. Inviare gli elaborati via e-mail non oltre il 29 novembre 2016.</a></li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Contatti</h2>
+				<ul>
+					<li>Prof. Claudio Rossetti (<a href="mailto:crossetti@luiss.it" target="_blank">crossetti@luiss.it</a>)</li>
+					<li>Collaboratore: Dr. Alessandra Marcelletti (<a href="mailto:Vieri.DelPanta@unier.it">amarcelletti@luiss.it</a>)</li>
+				</ul>
+				<h2>Ricevimento studenti</h2>
+				<p>Si prega di richiedere un appuntamento tramite email al docente o ai collaboratori del corso.</p>
+				<!--------------------------------------------------------->
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------------------->
+	<!-- 		<h3>Undergraduate Degree in Economics and Finance</h3> -->
+			<!------------------------------------------------------------------------------------------->
+			<button onclick="myAccFunc('Demo6')" class="padding-16 colors-sections button buttonc block left-align accortag">Serie Storiche ed Econometria Finanziaria 2015/16<i class="right fa fa-plus-square"></i></button>
+			<div id="Demo6" class="hide animate-opacity">
+				<div class="container maintext padding-b42">
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Info</h2>
+				<h2>Obiettivi formativi</h2>
+				<ul>
+					<li>Conoscenza dei principali metodi di analisi dei fenomeni economici, analisi e previsione delle serie storiche economiche e finanziarie.</li>
+					<li>Utilizzo di software statistico-econometrici.</li>
+				</ul>
+				<h2>Verifica dell'apprendimento</h2>
+				<ul>
+					<li>Problem sets.</li>
+					<li>Esame scritto.</li>
+				<!-- <li>Il voto finale si basa su una media ponderata dei risultati della prova scritta e dei problem set.</li> -->
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Outline del corso</h2>
+				<ul>
+					<li>Modello di regressione lineare.</li>
+					<li>Modelli lineari per dati panel.</li>
+					<li>Modelli per equazioni simultanee.</li>
+					<li>Introduzione ai modelli per serie storiche.</li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Materiale didattico</h2>
+				<h2>Testi di riferimento</h2>
+				<ul>
+					<li>Wooldridge J.M, <em>Introductory econometrics: a modern approach</em>, London: South Western Cengage Learning, 2009.</li> 
+					<li>R.S. Tsay, <em>Analysis of Financial Time Series</em>, 3rd Ed, Wiley, 2010. (Ch. 1, Ch. 2.1 - 2.6, Ch. 3.1 - 3.5)</li> 
+					<li>Altri utili riferimenti bibliografici:</li>
+					<ul>
+						<li>Stock, J.H. & Watson, M.W., <em>Intoduzione all'Econometria</em>, 3/ed. it a cura di F. Peracchi, Pearson, Milano, 2012.</li> 
+						<!-- <li>Wooldridge J.M., <em>Econometric Analysis of Cross Section and Panel Data</em>, MIT press, Cambridge (MA).</li> -->
+						<!-- <li>W.H. Greene. <em>Econometric analysis</em>, Upper Saddle River, NJ: Pearson Prentice Hall, 2008.</li>  -->
+						<!-- <li>F. Peracchi. <em>Econometrics</em>, Wiley, Chichester (UK), 2001.</li> -->
+					</ul>
+						<li>Durante le lezioni possono essere indicate ulteriori letture per alcuni argomenti.</li>
+				</ul>
+				<h2>Software</h2>
+				<a href="http://www.stata.com/">Stata</a></em>. Suggested readings: 
+				<ul>
+					<li>Hamilton L.C., <em>Statistics with Stata</em> (Updated for Version 10), Brooks/Cole, 2009.</li>
+					<li>A. C. Acock. <em>A Gentle Introduction to Stata</em>. Fourth Edition, Stata Press, 2014.</li> 
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Contatti</h2>
+				<ul>
+					<li>Prof. Claudio Rossetti (<a href="mailto:crossetti@luiss.it" target="_blank">crossetti@luiss.it</a>)</li>
+					<li>Dr. Antonio Pacifico (<a href="mailto:apacifico@luiss.it">apacifico@luiss.it</a>)</li>
+				</ul>
+				<h2>Ricevimento studenti</h2>
+				<p>Si prega di richiedere un appuntamento tramite email al docente o ai collaboratori del corso.</p>
+				<!--------------------------------------------------------->
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------------------->
+			<button onclick="myAccFunc('Demo7')" class="padding-16 colors-sections button buttonc block left-align accortag">Teoria e Metodi Quantitativi per l'Analisi del Consumatore 2014/15<i class="right fa fa-plus-square"></i></button>
+			<div id="Demo7" class="hide animate-opacity">
+				<div class="container maintext padding-b42">
+				<!--------------------------------------------------------->
+				<!-- Scrolling news -->
+				<marquee behavior="scroll" direction="left" scrollamount="3">
+				<a class="text-dkgreen">&diams;</a>
+				News: <a class="text-dkgreen">&diams;</a>
+				<a class="text-dkgreen">&diams;</a>
+				</marquee>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Info</h2>
+				<h2>Obiettivi formativi</h2>
+				<p>
+				Conoscenza dei principali strumenti statistici di natura multivariata per l'analisi del comportamento del consumatore.
+				</p>
+				<h2>Verifica dell'apprendimento</h2>
+				<p>
+				Esame scritto.
+				</p>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Outline del corso</h2>
+				<ul>
+					<li>Metodi statistici per il posizionamento: Analisi in Componenti Principali.</li>
+					<li>Inferenza statistica per l'analisi del consumatore.</li>
+					<li>Modelli statistici per l'analisi del consumatore.</li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Materiale didattico</h2>
+				<h2>Testi di riferimento</h2>
+				<ul>
+					<li>Analisi dei dati e data mining per le decisioni aziendali, S. Zani, A. Cerioli, Giuffr&eacute Editore, 2007.</li> 
+					<li>Statistica, D. M. Levine, T. C. Krehbiel, M. L. Berenson, 2 ed. italiana a cura di Raffaella Piccarreta, Milano: Apogeo, 2006.</li> 
+					<li>Durante le lezioni possono essere indicate ulteriori letture per alcuni argomenti.</li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Contatti</h2>
+				<ul>
+					<li>Prof. Claudio Rossetti (<a href="mailto:crossetti@luiss.it" target="_blank">crossetti@luiss.it</a>)</li>
+				</ul>
+				<h2>Ricevimento studenti</h2>
+				<p>Si prega di richiedere un appuntamento tramite email al docente o ai collaboratori del corso.</p>
+				<!--------------------------------------------------------->
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------------------->
+			<h3>Master in Corporate Finance - LUISS Business School</h3>
+			<!------------------------------------------------------------------------------------------->
+			<button onclick="myAccFunc('Demo8')" class="padding-16 colors-sections button buttonc block left-align accortag">Statistics 2015/16<i class="right fa fa-plus-square"></i></button>
+			<div id="Demo8" class="hide animate-opacity">
+				<div class="container maintext padding-b42">
+				<!--------------------------------------------------------->
+				<!-- Scrolling news -->
+				<marquee behavior="scroll" direction="left" scrollamount="3">
+				<a class="text-dkgreen">&diams;</a>
+				News: <a class="text-dkgreen">&diams;</a>
+				<a class="text-dkgreen">&diams;</a>
+				</marquee>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Info</h2>
+				<h2>Course description and objectives</h2>
+				<p>This course aims at introducing students to the basic concepts and tools of statistics and enable them to relate these concepts and tools to real life problems.</p>
+				<h2>Prerequisite</h2>
+				Basic knowledge of 
+				<ul>
+					<li>mathematics and </li>
+					<li>statistics.</li>
+				</ul>
+				<h2>Assessment method</h2>
+				Written test.
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Course outline</h2>
+				<ul>
+					<li>Descriptive statistics: tables, graphs, summary statistics, and dependence analysis.</li>
+					<li>Probability calculus and probability distributions.</li>
+					<li>Statistical inference: point estimation, confidence intervals and hypothesis testing.</li>
+					<li>The linear regression model.</li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Materiale didattico</h2>
+				<h2>Textbooks</h2>
+				<ul>
+					<li>A. Agresti and C. Franklin. <em>Statistics: The Art and Science of Learning from Data</em>. Third Edition, Pearson Education, Inc., 2013.</li> 
+				</ul>
+				<h2>Software</h2>
+				<a href="http://www.stata.com/">Stata</a></em>. Suggested readings: 
+				<ul>
+					<li>Hamilton L.C., <em>Statistics with Stata</em> (Updated for Version 10), Brooks/Cole, 2009.</li>
+					<li>A. C. Acock. <em>A Gentle Introduction to Stata</em>. Fourth Edition, Stata Press, 2014.</li> 
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Contacts</h2>
+				<ul>
+					<li>Prof. Claudio Rossetti (<a href="mailto:crossetti@luiss.it" target="_blank">crossetti@luiss.it</a>)</li>
+				</ul>
+				<h2>Office hours</h2>
+				Office hours by email appointment
+				<!--------------------------------------------------------->
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------------------->
+			<h3>Master in European Economic Governance</h3>
+			<!------------------------------------------------------------------------------------------->
+			<button onclick="myAccFunc('Demo9')" class="padding-16 colors-sections button buttonc block left-align accortag">MathLab. Data analysis with Stata 2015/16<i class="right fa fa-plus-square"></i></button>
+			<div id="Demo9" class="hide animate-opacity">
+				<div class="container maintext padding-b42">
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Info</h2>
+				<h2>Course description and objectives</h2>
+				<p>This course aims at introducing students to the use of statistical software for <p/>
+				<ul>
+					<li>basic data analysis, and </li>
+					<li>application of statistical techniques for organization, visualization, synthesis and interpretation of data.</li>
+				</ul>
+				<h2>Prerequisite</h2>
+				<p>Basic knowledge of 
+				<ul>
+					<li>mathematics and </li>
+					<li>statistics.</li>
+				</ul>
+				</p>
+				<h2>Software</h2>
+				<p>The statistical package Stata will be used throughout the course.</p>
+				<h2>Assessment method</h2>
+				Computer-aided written exam.
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Course outline</h2>
+				<ul>
+					<li>Introduction and quick tour of Stata. Organizing and visualizing data: data types.</li>
+					<li>Inputting data.</li>
+					<li>Variables and observations. Basic data manipulation.</li>
+					<li>Organizing and visualizing data. Tables and graphics for one variable.</li>
+					<li>Numerical descriptive measures for one variable. Basic sample statistics.</li>
+					<li>The association between two categorical variables. Contingency tables and basic sample statistics.</li>
+					<li>The association between two quantitative variables. Graphics and basic sample statistics.</li>
+					<li>The association between two quantitative variables. Regression.</li>
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Materiale didattico</h2>
+				<h2>Textbooks</h2>
+				<ul>
+					<li>A. Agresti and C. Franklin. <em>Statistics: The Art and Science of Learning from Data</em>. Third Edition, Pearson Education, Inc., 2013.</li> 
+				</ul>
+				<h2>Software</h2>
+				<a href="http://www.stata.com/">Stata</a></em>. Suggested readings: 
+				<ul>
+					<li>Hamilton L.C., <em>Statistics with Stata</em> (Updated for Version 10), Brooks/Cole, 2009.</li>
+					<li>A. C. Acock. <em>A Gentle Introduction to Stata</em>. Fourth Edition, Stata Press, 2014.</li> 
+				</ul>
+				<!--------------------------------------------------------->
+				<h2 class="colors-sectionst h2bar">Contacts</h2>
+				<ul>
+					<li>Prof. Claudio Rossetti (<a href="mailto:crossetti@luiss.it" target="_blank">crossetti@luiss.it</a>)</li>
+				</ul>
+				<h2>Office hours</h2>
+				Office hours by email appointment
+				<!--------------------------------------------------------->
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------------------->
+		</div>
+		<!---------------------------------------------->
+		</div>
+	</div>
+</div>
+<!------------------------------------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Computer codes Container -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Parallax Image -->
+<!--<div class="bgimg-cc display-container" id="codes"">
+  <div class="display-middle">
+	<span class="animate-zoom nameshad center sectiontitle">COMPUTER CODES</span>
+  </div>
+</div>
+
+<div class="container large justify maintextlight">
+	<div class="content padding-24 contentmaxwidht">
+	<h5 class="center padding-16"><span class="mytag wide"><i class="faicontleft fa fa-file-code-o"></i>COMPUTER CODES<i class="faicontright fa fa-file-code-o"></i></span></h5>
+	</div>
+</div>-->
+<!------------------------------------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Links Container -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Parallax Image -->
+<div class="bgimg-li display-container" id="links">
+	<div class="display-middle">
+		<span class="animate-zoom nameshad center sectiontitle">LINKS</span>
+	</div>
+</div>
+<!---------------------------------------------->
+<div class="container large justify maintext">
+	<div class="content padding-24 contentmaxwidht">
+<!-- 	<h5 class="center padding-16"><span class="mytag wide"><i class="faicontleft fa fa-link"></i>LINKS<i class="faicontright fa fa-link"></i></span></h5> -->
+		<p>
+			<a href="http://www.villa-appia.com/" target="_blank">Villa Appia</a>,
+			un luogo meraviglioso in cui organizzare eventi.
+		</p>
+		<div><embed type="text/html" src="http://www.villa-appia.com/" width="100%" height="700px"></div>
+	</div>
+</div>
+<!------------------------------------------------------------------------------------------------->
+
+
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Contact/Area Container -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Parallax Image -->
+<div class="bgimg-co display-container" id="contacts">
+	<div class="display-middle">
+		<span class="animate-zoom nameshad center sectiontitle">CONTACTS</span>
+	</div>
+</div>
+<!---------------------------------------------->
+<div class="container large justify maintext">
+	<div class="content padding-24 contentmaxwidht">
+<!-- 	<h5 class="center padding-16"><span class="mytag wide"><i class="faicontleft fa fa-address-card"></i>CONTACTS<i class="faicontright fa fa-address-card"></i></span></h5> -->
+		<div class="container colors-profilecard profilecard">
+		<!--   <img src="images/me.jpg" style="padding-top:5px; width:65%"> -->
+			<div class="profilecontainer">
+				<h2><strong>Claudio Rossetti</strong>, PhD</h2>
+				<p class="profiletitle">Professor of Econometrics</p>
+				<p>University of Naples Federico II</p>
+				<div class="center profiletext">
+			<!-- fa fa-map-marker -->
+			<!-- fa fa-mobile -->
+			<!-- fa fa-phone -->
+			<!--<li><a href="http://ricerca.impresaemanagement.luiss.it/en" target="_blank">Department of Business</a></li>-->
+			<!-- <li><a href="http://ricerca.impresaemanagement.luiss.it/en" target="_blank">and Management</a>,</li> -->
+			<!-- <li><strong>LUISS Guido Carli</strong>,</li> -->
+			<!-- <li><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Viale+Romania,+32,+Roma,+Italy&aq=0&oq=viale&sll=37.0625,-95.677068&sspn=45.332616,78.925781&vpsrc=0&ie=UTF8&hq=&hnear=Viale+Romania,+32,+00197+Roma,+Lazio,+Italy&ll=41.925462,12.493258&spn=0.010457,0.019269&t=m&z=16&iwloc=A" target="_blank">Viale Romania, 32</a></li> -->
+			<!-- <li> 00197 Rome, Italy</li> -->
+			<!-- <li>&nbsp;</li> -->
+			<!-- <li> -->
+			<!-- 	&nbsp; +39 06 8522 5758 -->
+			<!-- 	<img alt="" src="background/gif/Phone.gif" width="15%" align="left" hspace="0" vspace="0"/> -->
+			<!-- </li> -->
+			<!-- <i class="material-icons">call</i>  -->
+			<!-- 	<a href="mailto:crossetti@luiss.it" target="_blank">crossetti[at]luiss[dot]it</a> -->
+					<p><a href="mailto: claudio.rossetti@unina.it" target="_blank"><i class="fai fa fa-envelope-o"></i>claudio.rossetti@unina.it</a></p>
+			<!-- 		<p><a href="http://docenti.luiss.it/rossetti" target="_blank">My Home Page @ LUISS</a></p> -->
+					<p><a href=" https://www.docenti.unina.it/claudio.rossetti" target="_blank"><i class="fai fa fa-globe"></i>My Home Page @ UNINA</a></p>
+					<p><a href="http://ideas.repec.org/f/pro593.html" target="_blank"><i class="fai fa fa-lightbulb-o"></i>My profile @ IDEAS</a></p>
+			<!-- 		<p><a href="http://scholar.google.it/citations?hl=en&user=CXgSYAcAAAAJ" target="_blank"><i class="fai fa fa-graduation-cap"></i>My Google Scholar profile</a></p> -->
+					<p><a href="http://scholar.google.it/citations?hl=en&user=CXgSYAcAAAAJ" target="_blank"><i class="fai ai ai-google-scholar ai-1x"></i>My Google Scholar profile</a></p>
+					<p><a href="https://drive.google.com/file/d/1XVMSISlK_Ed8Dx0MQv7iqrBmIqDkxqmy/view?usp=sharing" target="_blank"><i class="fai fa fa-file-pdf-o"></i>Curriculum Vitae</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!------------------------------------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Footer -->
+<!------------------------------------------------------------------------------------------------->
+<footer class="container maintextlight bkgfooter padding-16 center">  
+<p class="center padding-8 size-footer"><span class="myfootertag wide"><a href="#"><i class="fa fa-arrow-up margin-right"></i>To the top</a></span></p>
+<!--     <div class="xlarge section"> -->
+<!--       <a href="#"><i class="fa fa-dribbble"></i></a>  -->
+<!--       <a href="#"><i class="fa fa-twitter"></i></a>   -->
+<!--       <a href="https://www.linkedin.com/in/claudio-rossetti-07ab5371/"><i class="fai fa fa-linkedin"></i></a>   -->
+<!--       <a href="#"><i class="fai fa fa-skype"></i></a>  -->
+<!--    </div> -->
+<!--  <div class="xlarge section">
+    <i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+    <i class="fa fa-google-plus"></i>
+  </div>-->
+  
+<!----------------------------------------------------------------------->
+<div class="section">
+	<!--   <a href="http://info.flagcounter.com/EUZm"><img class="displayed" src="http://s09.flagcounter.com/count/EUZm/bg_0D0F10/txt_F45800/border_16171A/columns_8/maxflags_16/viewers_Visitors/labels_0/pageviews_1/flags_0/" alt="Free counters!" border="0" width="75%" align="left"></a> -->
+	<p class="size-footer center">Designed by <a class="size-footer bold" href="http://claudiorossetti.co.nf" title="Claudio Rossetti">Claudio Rossetti</a> &copy; 2017</p>
+	<!--    - All Rights Reserved -->
+</div>
+<!----------------------------------------------------------------------->
+<!-- GoogleAnalytics tracking code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74188138-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!----------------------------------------------------------------------->
+</footer>
+<!------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------->
+<!-- Java scripts -->
+<!------------------------------------------------------------------------------------------------->
+<script type="text/javascript" src="js/javascripts.js"></script>
+<!------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------->
+</body>
+</html>
+
